@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manage Team Members</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="logo.png" alt="PureRide Logo">
+    </div>
+
+    <nav>
+      <ul class="nav">
+        <li><a href="#">Our Services</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="service provider s dashboard.html">Service Provider Dashboard</a></li>
+        <li><a href="#">Customer Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h2>Manage Team Members</h2>
+
+  <!-- حذف أعضاء -->
+  <section class="card">
+    <h3>Delete Members</h3>
+    <form class="members-grid" action="#" method="post">
+      
+      <label class="member-tile">
+        <input type="checkbox" name="delete_ids" value="1">
+        <img src="member.png" alt="Member 1">
+        <span class="member-name">Noura AlAli</span>
+      </label>
+
+      <label class="member-tile">
+        <input type="checkbox" name="delete_ids" value="2">
+        <img src="member.png" alt="Member 2">
+        <span class="member-name">Sara AlQahtani</span>
+      </label>
+
+      <label class="member-tile">
+        <input type="checkbox" name="delete_ids" value="3">
+        <img src="member.png" alt="Member 3">
+        <span class="member-name">Lama AlGhamdi</span>
+      </label>
+
+
+      <button type="submit" class="btn-primary">Delete</button>
+    </form>
+  </section>
+
+  <!-- إضافة عضو جديد -->
+  <section class="card">
+    <h3>Add New Member</h3>
+    <form class="provider-form" action="#" method="post" enctype="multipart/form-data">
+      <label>
+        <span>Name</span>
+        <input type="text" name="name" required placeholder="Full name">
+      </label>
+
+      <label>
+        <span>Photo</span>
+        <input type="file" name="photo" accept="image/*" required>
+      </label>
+
+      <label>
+        <span>DoB</span>
+        <input type="date" name="dob">
+      </label>
+
+      <label>
+        <span>Email</span>
+        <input type="email" name="email" placeholder="name@example.com">
+      </label>
+
+      <label>
+        <span>Area of Expertise</span>
+        <input type="text" name="expertise" placeholder="e.g., Detailing, Tinting">
+      </label>
+
+      <label>
+        <span>Skills</span>
+        <input type="text" name="skills" placeholder="e.g., Polishing, Customer Service">
+      </label>
+
+      <label>
+        <span>Education</span>
+        <input type="text" name="education" placeholder="e.g., Diploma in Auto Care">
+      </label>
+
+      <button type="submit" class="btn-primary">Add</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-left">
+      <div class="logo">
+        <img src="logo.png" alt="PureRide Logo">
+      </div>
+      <p>Copyright &copy; 2025 PureRide</p>
+    </div>
+
+    <div class="contact-info">
+      Contact us:
+      <div><i class="fas fa-at"></i> OurEmail@email.com</div>
+      <div><i class="fas fa-phone"></i> +3665050505050</div>
+    </div>
+
+    <div class="social-media">
+      <p>Follow us on Social:</p>
+      <div>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add a New Service</title>
+  <link rel="stylesheet" href="style.css" >
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="logo.png" alt="PureRide Logo">
+    </div>
+
+    <nav>
+      <ul class="nav">
+        <li><a href="#">Our Services</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Service Provider Dashboard</a></li>
+        <li><a href="#">Customer Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+<h2>Add a New Service</h2>
+
+<form class="provider-form" action="#" method="post">
+ <!-- sevice name (text only) -->
+  <label>
+    <span>Service Name</span>
+    <input type="text" name="service_name" required
+           inputmode="text" pattern="[A-Za-z ]{2,50}"
+           placeholder="Add text">
+  </label>
+ 
+  <!-- price (numbers only) -->
+  <label><span>Price</span></label>
+<input type="number" name="service_price" class="price-input" placeholder="Enter price" min="0"  required>
+
+
+ <!-- description -->
+  <label>
+    <span>Service Description</span>
+    <textarea name="service_description" rows="5" required
+              minlength="10" maxlength="300"
+              placeholder="Add text"></textarea>
+  </label>
+  
+  <!-- Photo (image only) -->
+<label><span>Photo</span></label>
+<div class="dropzone">
+  <input id="photo" type="file" name="service_photo" accept="image/*" required hidden>
+  <label for="photo" class="upload-content">
+    <img src="browseFile.png" alt="Upload icon">
+    <span class="upload-btn">Browse Files</span>
+  </label>
+</div>
+
+
+
+
+
+<!-- Submit -->
+<button type="submit">Submit</button>
+
+</form>
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-left">
+      <div class="logo">
+        <img src="logo.png" alt="PureRide Logo">
+      </div>
+      <p>Copyright &copy; 2025 PureRide</p>
+    </div>
+
+    <div class="contact-info">
+      Contact us:
+      <div><i class="fas fa-at"></i> OurEmail@email.com</div>
+      <div><i class="fas fa-phone"></i> +3665050505050</div>
+    </div>
+
+    <div class="social-media">
+      <p>Follow us on Social:</p>
+      <div>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

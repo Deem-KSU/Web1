@@ -110,4 +110,331 @@ body {
   opacity: 0.9;
 }
 
+/*service provider dashboard بداية*/
 
+h2 {
+  text-align: center;
+  margin: 40px 0;
+}
+
+
+/* SPDشكل كل خدمه*/
+.service-card {
+  display: flex;
+  align-items: center;
+  margin: 30px auto;
+  width: 80%;
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #fafafa;
+}
+
+
+
+/* شكل الصور داخل كل خدمه */
+.service-card .thumb img {
+  width: 180px;
+  height: auto;
+  border: none;            
+  border-radius: 0;
+  box-shadow: none;
+  display: block;          /* يمنع الفراغ تحت الصوره*/
+  margin: 0;               
+}
+
+
+.service-card {
+  display: flex;
+  align-items: center;
+}
+
+
+.service-card .thumb {
+  margin-right: 20px;      
+}
+
+
+.service-card .info h3 {
+  margin: 0 0 6px;
+}
+.service-card .info p {
+  margin: 0;
+}
+
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* السعر داخل كل خدمه */
+.meta {
+  align-self: flex-end;
+  font-weight: 600;
+  color: #333;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+
+/* الازرار اللي تحت الخدمات */
+.actions {
+  display: flex;              
+  justify-content: center;    
+  margin: 40px 0;             
+}
+
+/* فراغ بين الازرار اللي تحت الخدمات */
+.actions button {
+  margin-right: 20px;         
+  background-color: #0d47a1;  
+  color: #fff;                
+  border: none;               
+  padding: 12px 28px;         
+  border-radius: 8px;        
+  font-size: 15px;            
+  cursor: pointer;
+}
+
+/* آخر زر ما يكون فيه فراغ يمين */
+.actions button:last-child {
+  margin-right: 0;
+}
+
+/* لما يمر الماوس على الزر */
+.actions button:hover {
+  background-color: #08306b;
+}
+
+
+
+/* زر Add a new service */
+.add-btn {
+  background-color: #0d47a1;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-block;
+  border: none;
+}
+
+.manage-btn {
+  margin-right: 20px;
+}
+
+
+.add-btn:hover {
+  background-color: #08306b;
+}
+
+
+.add-btn:hover {
+  background-color: #08306b;
+}
+
+
+/*service provider dashboard نهايه*/
+
+
+/*add serviceبداية*/
+
+.provider-form label {
+  display: block; 
+  margin: 20px 0; 
+}
+
+/*يخلي العنوان فوق المربع*/
+.provider-form span {
+  display: block; 
+  font-weight: 500; 
+  margin-bottom: 8px;
+}
+
+.provider-form input,
+.provider-form textarea {
+  width: 100%; /* يخلي المربعات تاخذ عرض الصفحة المحدد */
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.provider-form input.price-input {
+  width: 150px; /* حجم خانة السعر */
+  display: block;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+
+/*رفع الصوره*/
+.provider-form input[type="file"] {
+  display: block;
+  width: 100%;
+  padding: 40px;
+  border: 2px dashed #0d47a1;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+
+.provider-form input[type="file"] { display: none; }
+
+
+
+/*الارسال*/
+.provider-form button {
+  display: block;
+  width: 200px;
+  margin: 30px auto;
+  padding: 12px 20px;
+  background-color: #0d47a1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+
+.provider-form button:hover {
+  background-color: #08306b;
+}
+
+
+.dropzone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 2px dashed #0d47a1;
+  border-radius: 10px;
+  background: #fff;
+  margin: 20px 0;
+}
+
+
+.upload-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.upload-content img {
+  width: 60px;
+  opacity: 0.9;
+}
+
+.upload-content img:hover {
+  opacity: 1;
+}
+
+
+
+.upload-btn {
+  background-color: #0d47a1;
+  color: white;
+  padding: 5px 16px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+
+.upload-btn:hover {
+  background-color: #08306b;
+}
+/*add serviceنهايه*/
+
+
+/* ===== Manage Team Members ===== */
+.card{
+  width:80%;
+  margin: 20px auto;
+  background:#fafafa;
+  border:1px solid #ddd;
+  border-radius:10px;
+  padding:20px;
+}
+
+
+
+.members-grid{
+  display: flex;
+  flex-wrap: wrap;           /* يلف العناصر للسطر التالي */
+  align-items: flex-start;   /* يطابق align-items:start */
+  margin: 12px 0 8px 0;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+/* كل عنصر (الكرت/الليبل) داخل الشبكة */
+.members-grid > *{
+  
+  flex: 1 1 220px;           
+  
+  margin: 8px;              
+}
+
+
+
+/* تصميم الكرت */
+.member-tile{
+  display: flex;
+  align-items: center;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: #fff;
+}
+
+.member-tile img{
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin-right: 10px;   
+}
+
+
+.member-tile img{
+  display: block;
+  overflow: hidden;     /* يمنع خروج الصورة عن الإطار */
+}
+
+
+.member-name{ font-weight:500; }
+
+
+.btn-primary {
+  background-color: #0d47a1;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #08306b;
+}
+
+/* ===== Breadcrumbs ===== */
+.breadcrumbs{
+  padding: 10px 8%;
+  font-size: .92rem;
+  color:#555;
+}
+.breadcrumbs a{
+  color:#0d47a1;
+  text-decoration:none;
+}
+.breadcrumbs a:hover{ text-decoration:underline; }
+
+/*نهاية Manage Team Members*/
