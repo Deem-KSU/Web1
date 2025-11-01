@@ -1,0 +1,408 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  background-color: #fff;
+  color: #333;
+}
+/* ========== HEADER ========== */
+.header {
+  background-color: #0d47a1;
+  color: #fff;
+  padding: 18px 8%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 3px solid #1565c0;
+}
+
+.logo img {
+  height: 80px;
+  width: auto;
+  display: block;
+  margin-right: 40px;
+}
+
+.nav {
+  list-style: none;
+  display: flex; 
+}
+.nav li {
+  margin-right: 25px; 
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.nav a.active {
+  border-bottom: 2px solid #fff;
+}
+/* ========== TEAM SECTION ========== */
+.team-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+h2 {
+  color: #0d47a1;
+  font-size: 28px;
+}
+
+.intro {
+  color: #333;
+  font-size: 15px;
+  
+}
+
+
+.team-grid {
+  text-align: center;
+  margin: 0 200px;
+}
+
+.staff-card {
+  display: inline-block;
+  width: 25%;
+  margin: 1.5%;
+  background-color: #fafafa;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 16px; 
+}
+
+.staff-card img {
+  width: 100%;
+  height: 200px;
+}
+
+.staff-card a {
+  display: block;
+  color: #0d47a1;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+
+.staff-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ========== JOIN SECTION ========== */
+.join-section {
+  background-color: #d1dce6aa;
+  padding: 60px 20px;
+  text-align: center;
+}
+.evaluation-section,.add-section {
+  
+  padding: 60px 20px;
+  text-align: center;
+}
+
+
+.service-evaluation,.add-request,.join-form {
+  width: 650px;
+  margin: 30px auto;
+  text-align: left;
+}
+
+
+.name-fields div {
+  width: 48%;
+  float: left;
+  margin-right: 4%;
+}
+
+.name-fields .last-name {
+  margin-right: 0;
+}
+
+.service-evaluation label,.add-request label,.join-form label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #333;
+}
+.service-evaluation textarea,.service-evaluation input,.add-request textarea,.add-request input,.join-form input,
+.join-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.service-evaluation select,.add-request select,.add-request input[type="date"] ,.join-form select ,.join-form input[type="date"] {
+  width: 48%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  display: block;
+}
+
+
+textarea {
+  height: 100px;
+}
+
+.file-upload-box {
+  border: 2px dashed #CED4DA;
+  padding: 30px;
+  text-align: center;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.file-upload-box:hover {
+  border-color: #0d47a1;
+  background-color: #EBF5FF;
+}
+
+
+.file-upload-box span {
+  font-weight: bold;
+}
+
+.file-upload-box input[type="file"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+ 
+}
+
+
+button {
+  background-color: #0d47a1;
+  color: #fff;
+  padding: 10px 40px;
+  border: none;
+  font-weight: 600;
+  display: block;
+  margin: 20px auto 0;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+/* ===== STAFF PROFILE PAGE ===== */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.profile-table {
+  width: 80%;
+  max-width: 850px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+
+.profile-table caption {
+  font-size: 24px;
+  font-weight: 600;
+  color: #0d47a1;
+  margin-bottom: 15px;
+  text-align: center;
+  padding: 10px;
+}
+
+
+.profile-table th,
+.profile-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  text-align: left;
+}
+
+
+.profile-table th {
+  color: #0d47a1;
+  font-weight: 600;
+  width: 250px;
+  text-align: center;
+  padding-top: 20px;
+padding-bottom: 20px;
+
+}
+
+
+
+.profile-table td strong {
+  display: block;
+  color: #0d47a1;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.profile-table td li {
+  padding-left: 10px;
+}
+
+
+.profile-photo img {
+  width: 220px;
+  height: 220px;
+  display: block;
+  margin: 10px auto;
+}
+
+
+.cellColor {
+  background-color: #d1dce6aa;
+}
+
+
+/* ========== FOOTER ========== */
+footer {
+  background-color: #0d47a1;
+  color: #fff;
+  padding: 50px 8%;
+  font-size: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-top: 6px solid #1565c0;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer div {
+  margin-right: 60px;
+}
+footer img {
+  width: 22px;
+  margin-right: 10px;
+}
+footer p {
+  font-weight: 500;
+  margin: 0 0 10px;
+}
+.footer-left .logo img {
+  height: 100px;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.copyright {
+  width: 100%;
+  text-align: left;
+  border-top: 1px solid #ffffff33;
+  margin-top: 50px;
+  padding-top: 15px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.previous-service{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+/*======evaluate service======*/
+.rating {
+  direction: rtl; 
+  display: inline-flex;
+}
+
+.rating input {
+  display: none; 
+}
+
+.rating label {
+  font-size: 30px;
+  color: lightgray;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.rating input:checked ~ label {
+  color: gold;
+}
+
+
+.rating label:hover,
+.rating label:hover ~ label {
+  color: gold;
+}
+/*======previous service requests========*/
+
+.main-title {
+  text-align: center;
+  margin: 40px 0 30px;
+  color: #0d47a1;
+  font-size: 28px;
+}
+/* Service boxes */
+.Service-box {
+  position: relative ;
+  width: 70%;
+  margin: 0 auto 20px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  background-color: #fff;
+  
+}
+
+.Service-box p {
+  margin: 5px 0;
+  font-size: 15px;
+  color: #333;
+}
+
+.Service-box .service-name {
+  font-weight: bold;
+  font-size: 17px;
+}
+.Service-box .status {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%); 
+  font-weight: 600;
+  color: #666;
+
+}
+/* Buttons section */
+.links-container {
+  text-align: center;
+  margin: 40px 0;
+}
+
+#add, #evaluate {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 30px;
+  margin: 0 15px;
+  background-color: #555;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+
+}
+
+#evaluate:hover,#add:hover {
+  background-color: #333;
+}
+
