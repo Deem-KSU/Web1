@@ -2,34 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Page title</title>
-  <link rel="stylesheet" href="stylee.css" >
+  <title>Service Evaluation</title>
+  <link rel="stylesheet" href="style.css" >
 </head>
 
 <body>
-  <!-- Header -->
+   <!-- Header -->
   <header class="header">
     <div class="logo">
-      <img src="logo.png" alt="PureRide Logo">
+      <a href="HomePage.html">
+  <img src="Images/logo.png" alt="PureRide Logo">
+  </a>
     </div>
 
     <nav>
       <ul class="nav">
-        <li><a href="#">Our Services</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Service Provider Dashboard</a></li>
-        <li><a href="#">Customer Dashboard</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="About-Us.html">About Us</a></li>
+        <li><a href="serviceProvidersDashboard.html">Service Provider's Dashboard</a></li>
+        <li><a href="previousRequests.html">Customer Dashboard</a></li>
       </ul>
     </nav>
   </header>
+
+  
+  <nav class="breadcrumb">
+  <a href="HomePage.html">Home</a> &gt;
+  <a href="previousRequests.html">Customer dashboard</a> &gt;
+  <span>Service Evaluation</span>
+</nav>
 <!-- form -->
-<section class="evaluation-section">
+
   <h2>Service Evaluation</h2>
 
-<form action="#" method="post" class="service-evaluation">
+<form action="#" method="post" class="form-style" id="evalForm">
  <div class="Service">
         <label> Select Service
-        <select name="service-eval">
+        <select name="service-eval" id="service-eval">
           <option >choose a service</option>
           <option>Car Wash</option>
           <option>Window Tinting</option>
@@ -37,18 +46,19 @@
           <option>Polishing & Waxing</option>
         </select></label>
       </div>
-<label for="rating">Rating</label><br>
+
+<label>Rating</label><br>
 
   <div class="rating">
-    <input type="radio" id="star5" name="rating" value="5" />
+    <input type="radio" id="star5" name="rating" value="5">
     <label for="star5">★</label>
-    <input type="radio" id="star4" name="rating" value="4" />
+    <input type="radio" id="star4" name="rating" value="4" >
     <label for="star4">★</label>
-    <input type="radio" id="star3" name="rating" value="3" />
+    <input type="radio" id="star3" name="rating" value="3" >
     <label for="star3">★</label>
-    <input type="radio" id="star2" name="rating" value="2" />
+    <input type="radio" id="star2" name="rating" value="2" >
     <label for="star2">★</label>
-    <input type="radio" id="star1" name="rating" value="1" />
+    <input type="radio" id="star1" name="rating" value="1" >
     <label for="star1">★</label>
   </div>
 
@@ -58,33 +68,35 @@
      </label></div>
 
   <button type="submit">Submit</button>
-</form></section>
+</form>
 
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-left">
-      <div class="logo">
-        <img src="logo.png" alt="PureRide Logo">
-      </div>
-      <p>Copyright &copy; 2025 PureRide</p>
+   <!-- Footer -->
+<footer>
+  <div class="footer-left">
+    <div class="logo">
+      <img src="Images/logo.png" alt="PureRide Logo">
     </div>
+    <p>Copyright &copy; 2025 PureRide</p>
+  </div>
 
-    <div class="contact-info">
-      Contact us:
-      <div><i class="fas fa-at"></i> OurEmail@email.com</div>
-      <div><i class="fas fa-phone"></i> +3665050505050</div>
-    </div>
+        
+        <div class="contact-info">
+            <p>Contact us:</p>
+            <div><img src="Images/email.png" alt="email"> PureRide@email.com</div>
+            <div><img src="Images/phone-call.png" alt="phone"> +966505050505</div>
+        </div>
 
-    <div class="social-media">
-      <p>Follow us on Social:</p>
-      <div>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-whatsapp"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-      </div>
-    </div>
-  </footer>
+        <div class="social-media">
+            <p>Follow us on Social:</p>
+            <div>
+                <img src="Images/instagram.png" alt="Instagram" >
+                <img src="Images/facebook.png" alt="Facebook" >
+                <img src="Images/whatsapp.png" alt="WhatsApp" >
+                <img src="Images/twitter.png" alt="Twitter" >
+            </div>
+        </div>
+    </footer>
+ <script src="requste.js"></script>
 </body>
 </html>
