@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Add a New Service</title>
-  <link rel="stylesheet" href="style.css" >
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -23,56 +24,66 @@
     </nav>
   </header>
 
+  <h2>Add a New Service</h2>
 
+  <!-- IMPORTANT: الفورم مربوطه بدالة JS -->
+ <form class="provider-form"
+      id="addServiceForm"
+      action="#"
+      method="post"
+      novalidate
+      onsubmit="handleAddService(event)">
 
-<h2>Add a New Service</h2>
+    <label>
+      <span>Service Name</span>
+      <input type="text"
+             id="serviceName"
+             name="service_name"
+             required
+             inputmode="text"
+             placeholder="Add text">
+    </label>
 
-<form class="provider-form" action="#" method="post">
- <!-- sevice name (text only) -->
-  <label>
-    <span>Service Name</span>
-    <input type="text" name="service_name" required
-           inputmode="text" pattern="[A-Za-z ]{2,50}"
-           placeholder="Add text">
-  </label>
- 
-  <!-- price (numbers only) -->
-  <label><span>Price</span></label>
-<input type="number" name="service_price" class="price-input" placeholder="Enter price" min="0"  required>
+    <!-- Price (numbers only) -->
+    <label><span>Price</span></label>
+    <input type="number"
+           id="servicePrice"
+           name="service_price"
+           class="price-input"
+           placeholder="Enter price"
+           min="0"
+           required>
 
+    <!-- Description -->
+    <label>
+      <span>Service Description</span>
+      <textarea id="serviceDescription"
+                name="service_description"
+                rows="5"
+                required
+                minlength="10"
+                maxlength="300"
+                placeholder="Add text"></textarea>
+    </label>
 
- <!-- description -->
-  <label>
-    <span>Service Description</span>
-    <textarea name="service_description" rows="5" required
-              minlength="10" maxlength="300"
-              placeholder="Add text"></textarea>
-  </label>
-  
-  <!-- Photo (image only) -->
-<label><span>Photo</span></label>
-<div class="dropzone">
-  <input id="photo" type="file" name="service_photo" accept="image/*" required hidden>
-  <label for="photo" class="upload-content">
-    <img src="browseFile.png" alt="Upload icon">
-    <span class="upload-btn">Browse Files</span>
-  </label>
-</div>
+    <!-- Photo (image only) -->
+    <label><span>Photo</span></label>
+    <div class="dropzone">
+      <input id="servicePhoto"
+             type="file"
+             name="service_photo"
+             accept="image/*"
+             required
+             hidden>
+      <label for="servicePhoto" class="upload-content">
+        <img src="browseFile.png" alt="Upload icon">
+        <span class="upload-btn">Browse Files</span>
+      </label>
+    </div>
 
-
-
-
-
-<!-- Submit -->
-<button type="submit">Submit</button>
-
-</form>
-
-
-
-
-
-
+    <!-- Submit -->
+    <button type="submit">Submit</button>
+  </form>
 
   <!-- Footer -->
   <footer class="footer">
@@ -85,19 +96,22 @@
 
     <div class="contact-info">
       Contact us:
-      <div><i class="fas fa-at"></i> OurEmail@email.com</div>
-      <div><i class="fas fa-phone"></i> +3665050505050</div>
+      <div>OurEmail@email.com</div>
+      <div>+3665050505050</div>
     </div>
 
     <div class="social-media">
       <p>Follow us on Social:</p>
       <div>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-whatsapp"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">WhatsApp</a>
+        <a href="#">Twitter</a>
       </div>
     </div>
   </footer>
+
+  <!-- ربط ملف الجافاسكربت الخارجي -->
+  <script src="add_service.js"></script>
 </body>
 </html>
