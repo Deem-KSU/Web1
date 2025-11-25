@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Service</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <img src="Images/logo.png" alt="PureRide Logo">
+    </div>
+
+    <nav>
+      <ul class="nav">
+        <li><a href="#">Our Services</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="service provider s dashboard.html">Service Provider Dashboard</a></li>
+        <li><a href="#">Customer Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h2>Add a New Service</h2>
+
+  <form action="#"
+        method="post"
+        enctype="multipart/form-data"
+        class="form-style"
+        id="addServiceForm"
+        novalidate
+        onsubmit="handleAddService(event)">
+
+    <label>
+      <span>Service Name</span>
+      <input type="text"
+             name="serviceName"
+             id="serviceName"
+             placeholder="Enter service name"
+             required>
+    </label>
+
+    <label>
+      <span>Service Fee</span>
+      <input type="number"
+             name="serviceFee"
+             id="servicePrice"
+             placeholder="Enter service fee"
+             required>
+    </label>
+
+    <label>
+      <span>Service Description</span>
+      <textarea name="serviceDescription"
+                id="serviceDescription"
+                rows="4"
+                placeholder="Write service details"
+                required></textarea>
+    </label>
+
+    <label>
+      <span>Service Photo</span>
+      <input type="file"
+             name="servicePhoto"
+             id="photo"
+             accept="image/*"
+             required>
+    </label>
+
+    <button type="submit" class="btn-primary">Add</button>
+  </form>
+
+  <footer class="footer">
+    <div class="footer-left">
+      <div class="logo">
+        <img src="Images/logo.png" alt="PureRide Logo">
+      </div>
+      <p>Copyright © 2025 PureRide</p>
+    </div>
+
+    <div class="contact-info">
+      Contact us:
+      <div>OurEmail@email.com</div>
+      <div>+3665050505050</div>
+    </div>
+
+    <div class="social-media">
+      <p>Follow us on Social:</p>
+      <div>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">WhatsApp</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="addService.js"></script>
+
+</body>
+</html>
