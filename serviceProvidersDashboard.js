@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", function () {
+function loadServices() {
   var container = document.getElementById("dynamicServices");
   if (!container) return;
 
@@ -20,27 +20,28 @@ window.addEventListener("DOMContentLoaded", function () {
     return;
   }
 
-  services.forEach(function (srv) {
+  for (var i = 0; i < services.length; i++) {
+    var srv = services[i];
+
     var article = document.createElement("article");
     article.className = "card__continer";
 
     var imgSrc = "Images/CarWash.png";
 
-    article.innerHTML = `
-      <div class="card__media">
-        <img src="${imgSrc}" alt="${srv.name}">
-      </div>
-      <div class="card__body">
-        <h2 class="card__title">${srv.name}</h2>
-        <p class="card__text">
-          ${srv.description}
-        </p>
-        <div class="card__price">
-          ${srv.price} SR
-        </div>
-      </div>
-    `;
+    var html = "";
+    html += '<div class="card__media">';
+    html +=   '<img src="' + imgSrc + '" alt="' + srv.name + '">';
+    html += '</div>';
+    html += '<div class="card__body">';
+    html +=   '<h2 class="card__title">' + srv.name + '</h2>';
+    html +=   '<p class="card__text">' + srv.description + '</p>';
+    html +=   '<div class="card__price">' + srv.price + ' SR</div>';
+    html += '</div>';
 
+    article.innerHTML = html;
     container.appendChild(article);
-  });
-});
+  }
+}
+
+// استدعاء الدالة بعد تحميل السكربت
+loadServices();
